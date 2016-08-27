@@ -1,0 +1,24 @@
+{
+  "name": "lab1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf static",
+    "browserifyCo": "cp node_modules/co/index.js static/co.js && sed -i '' 's|module.exports|window.co|' static/co.js",
+    "copyAssets": "mkdir -p static && npm run browserifyCo",
+    "start": "node index.js",
+    "serve": "python -m SimpleHTTPServer 8081",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^9.0.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "fs-promise": "^0.5.0",
+    "path": "^0.12.7"
+  }
+}
