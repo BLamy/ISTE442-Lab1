@@ -24,7 +24,7 @@ Support could be backported using [regenerator](https://facebook.github.io/regen
 ### Run With node6 and NPM (recommended)
 *run.sh require npm ^3.0.0 &  node ^6.0.0*
 ```
-git clone http://github.com/Blamy/lab1.git
+git clone https://github.com/BLamy/ISTE442-Lab1.git
 cd lab1
 sh ./run.sh
 ```
